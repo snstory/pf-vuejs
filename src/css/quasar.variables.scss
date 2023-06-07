@@ -1,0 +1,81 @@
+// Quasar SCSS (& Sass) Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass/SCSS variables found in Quasar's source Sass/SCSS files.
+
+// Check documentation for full list of Quasar variables
+
+// Your own variables (that are declared here) and Quasar's own
+// ones will be available out of the box in your .vue/.scss/.sass files
+
+// It's highly recommended to change the default colors
+// to match your app's branding.
+// Tip: Use the "Theme Builder" on Quasar's documentation website.
+
+$primary: #1976d2;
+$secondary: #26a69a;
+$accent: #9c27b0;
+
+$dark: #1d1d1d;
+
+$positive: #21ba45;
+$negative: #c10015;
+$info: #31ccec;
+$warning: #f2c037;
+
+$sulres: #2450a6;
+
+// ----- default -----
+$min-width: 300px;
+$min-hg: 500px;
+$bhs-font: "Black Han Sans", sans-serif;
+/* 
+font-family: 'Black Han Sans', sans-serif;
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Nanum Myeongjo', serif;
+*/
+// ----- mixin -----
+@mixin setPos($position: absolute, $left: 0, $top: 0, $zIndex: 1) {
+   position: $position;
+   left: $left;
+   top: $top;
+   z-index: $zIndex;
+}
+@mixin font-nago($wg: 400, $size: 1rem) {
+   font-family: "Nanum Gothic", sans-serif;
+   font-weight: $wg;
+   font-size: $size;
+}
+@mixin font-namj($wg: 400, $size: 1rem) {
+   font-family: "Nanum Myeongjo", serif;
+   font-weight: $wg;
+   font-size: $size;
+}
+
+@mixin after-bg($bg-src: "src/assets/home-bg.png", $position: fixed, $opacity: 1, $z-index: -1) {
+   position: $position;
+   z-index: $z-index;
+   display: block;
+   width: 100%;
+   height: 100vh;
+   content: "";
+   background: white url($bg-src) center / cover no-repeat;
+   opacity: $opacity;
+   border-radius: 1rem;
+}
+
+@mixin dtxt-shadow($color: white, $gap: 2, $effect: 2px) {
+   text-shadow: #{$gap}px #{$gap}px $effect $color, -#{$gap}px #{$gap}px $effect $color,
+      #{$gap}px -#{$gap}px $effect $color, -#{$gap}px -#{$gap}px $effect $color;
+}
+
+@mixin common-style-add {
+   position: absolute;
+   left: 0;
+   top: 0;
+   z-index: 20;
+   width: 100%;
+   height: 100vh;
+   background-color: rgba(242, 242, 242, 0.3);
+}
+// ----- function -----

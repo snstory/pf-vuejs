@@ -1,0 +1,45 @@
+{
+  "name": "sulre-jbg",
+  "version": "0.0.1",
+  "description": "Find The Hidden Caleb App",
+  "productName": "Find The Hidden Caleb",
+  "author": "KJHong <fcs7north@gmail.com>",
+  "private": true,
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "dependencies": {
+    "@quasar/cli": "^2.2.1",
+    "@quasar/extras": "^1.16.4",
+    "core-js": "^3.30.2",
+    "gsap": "^3.12.0",
+    "lodash": "^4.17.21",
+    "npm-check-updates": "^16.10.12",
+    "quasar": "^2.12.0",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.2",
+    "vuex": "^4.1.0"
+  },
+  "devDependencies": {
+    "@quasar/app": "^3.3.3",
+    "electron": "^25.0.1",
+    "electron-packager": "^17.1.1",
+    "workbox-webpack-plugin": "^7.0.0"
+  },
+  "browserslist": [
+    "last 10 Chrome versions",
+    "last 10 Firefox versions",
+    "last 4 Edge versions",
+    "last 7 Safari versions",
+    "last 8 Android versions",
+    "last 8 ChromeAndroid versions",
+    "last 8 FirefoxAndroid versions",
+    "last 10 iOS versions",
+    "last 5 Opera versions"
+  ],
+  "engines": {
+    "node": ">= 12.22.1",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  }
+}
